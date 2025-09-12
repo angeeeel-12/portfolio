@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Bless M. Mendoza</title>
+    <meta name="description" content="Personal portfolio website" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons (Remixicon for convenience) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- Header / Navigation -->
+    <header class="site-header" id="top">
+        <div class="container nav-wrapper">
+            <div class="logo" aria-label="Site logo">Angel M<span class="accent">.</span></div>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <!-- Each link has data-target for smooth JS scroll & active state handling -->
+                    <li><a href="#home" data-target="home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+                    <li><a href="#skills" data-target="skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" data-target="projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certificates" data-target="certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="section hero">
+        <div class="container hero-grid">
+            <div class="hero-text fade-in-up">
+                <h1>Hi, I'm <span class="accent">Angel Bless</span></h1>
+                <p class="tagline"><strong>Aspiring Network Administrator &amp; UI/UX Designer</strong><br><span class="tagline-desc">I love turning creativity, analytics, and network systems into meaningful digital experiences.</span></p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary scroll-btn" aria-label="Skip to projects section">View My Work</a>
+                    <a href="resume/RESUME_Mendoza.pdf" target="_blank" rel="noopener" class="btn outline" aria-label="Open resume PDF in new tab">Resume</a>
+                    <a href="#resume" class="btn outline" aria-label="Jump to on-page resume section">CV</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-1">
+                <div class="image-placeholder has-photo" aria-label="Profile photo">
+                    <img src="images/new%20photo.png" alt="Profile photo" class="profile-photo" loading="lazy" />
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <i class="ri-arrow-down-line"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about reveal-section">
+        <div class="container about-grid">
+            <div class="about-image fade-in-up">
+                <div class="avatar-placeholder has-photo" aria-label="About section photo">
+                    <img src="images/photo%202.jpg" alt="About section photo" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+                </div>
+            </div>
+            <div class="about-text fade-in-up delay-1">
+                <h2 class="section-title"><span class="number">01</span> About <span class="accent">Me</span></h2>
+                <p>I am a 4th-year BSIT student at Laguna State Polytechnic University – Siniloan Campus, majoring in Network Administration. Throughout my studies, I have developed a strong foundation in technology while nurturing my passions for creativity, data analytics, and network administration. From the very beginning, I was genuinely interested in technology and as I went deeper into my studies, this interest gradually turned into love and dedication for the IT field.</p>
+                <p>What keeps me motivated are the people who continuously support me, inspiring me to learn, grow, and push myself further. With their encouragement, I strive to balance technical expertise with creativity, allowing me to design, analyze, and manage digital solutions effectively while preparing myself for future opportunities in the tech industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills reveal-section">
+        <div class="container">
+            <h2 class="section-title center"><span class="number">02</span> My <span class="accent">Skills</span></h2>
+            <div class="skills-wrapper fade-in-up skills-icons">
+                <div class="skill-group">
+                    <h3 class="skill-heading">Technical</h3>
+                    <ul class="tech-skill-list">
+                            <li><i class="ri-paint-brush-line" aria-hidden="true"></i><span>Figma</span></li>
+                            <li><i class="ri-router-line" aria-hidden="true"></i><span>Cisco Packet Tracer</span></li>
+                            <li><i class="ri-file-word-line" aria-hidden="true"></i><span>Microsoft Word</span></li>
+                            <li><i class="ri-slideshow-line" aria-hidden="true"></i><span>Microsoft PowerPoint</span></li>
+                            <li><i class="ri-file-excel-line" aria-hidden="true"></i><span>Microsoft Excel</span></li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-heading">Soft Skills</h3>
+                    <ul class="soft-skill-list with-icons">
+                        <li><i class="ri-lightbulb-line" aria-hidden="true"></i><span>Creativity</span></li>
+                        <li><i class="ri-chat-3-line" aria-hidden="true"></i><span>Communication</span></li>
+                        <li><i class="ri-headphone-line" aria-hidden="true"></i><span>Active Listening</span></li>
+                        <li><i class="ri-focus-2-line" aria-hidden="true"></i><span>Attention to Detail &amp; Accuracy</span></li>
+                        <li><i class="ri-user-smile-line" aria-hidden="true"></i><span>Professionalism</span></li>
+                        <li><i class="ri-rocket-line" aria-hidden="true"></i><span>Strong Work Ethic</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects reveal-section">
+        <div class="container">
+            <h2 class="section-title center"><span class="number">03</span> Featured <span class="accent">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- AutoPsych -->
+                <article class="project-card fade-in-up" data-project="AutoPsych">
+                    <div class="project-carousel" aria-label="AutoPsych image carousel">
+                        <div class="carousel-frame">
+                            <div class="carousel-track">
+                                <img src="AutoPsych/LANDING PAGE.svg" alt="AutoPsych - LANDING PAGE screen" loading="lazy">
+                                <img src="AutoPsych/LOGIN.svg" alt="AutoPsych - LOGIN screen" loading="lazy">
+                                <img src="AutoPsych/DASHBOARD.svg" alt="AutoPsych - DASHBOARD screen" loading="lazy">
+                                <img src="AutoPsych/Take a test.svg" alt="AutoPsych - Take a Test screen" loading="lazy">
+                                <img src="AutoPsych/Upload scanned.svg" alt="AutoPsych - Upload Scanned screen" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous AutoPsych image"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+                        <button class="carousel-btn next" aria-label="Next AutoPsych image"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+                        <div class="carousel-indicators" aria-hidden="true"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AutoPsych</h3>
+                        <p>A psychological testing platform that automates assessments and instantly generates results for improved mental health evaluation.</p>
+                    </div>
+                </article>
+
+                <!-- HackLure -->
+                <article class="project-card fade-in-up delay-1" data-project="HackLure">
+                    <div class="project-carousel" aria-label="HackLure image carousel">
+                        <div class="carousel-frame">
+                            <div class="carousel-track">
+                                <img src="Hacklure/LANDING PAGE.svg" alt="HackLure - LANDING PAGE screen" loading="lazy">
+                                <img src="Hacklure/LOGIN PAGE.svg" alt="HackLure - LOGIN PAGE screen" loading="lazy">
+                                <img src="Hacklure/DASHBOARD.svg" alt="HackLure - DASHBOARD screen" loading="lazy">
+                                <img src="Hacklure/REPORTS PAGE.svg" alt="HackLure - REPORTS PAGE screen" loading="lazy">
+                                <img src="Hacklure/IP MANAGEMENT.svg" alt="HackLure - IP MANAGEMENT screen" loading="lazy">
+                                <img src="Hacklure/SETTINGS PAGE.svg" alt="HackLure - SETTINGS PAGE screen" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous HackLure image"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+                        <button class="carousel-btn next" aria-label="Next HackLure image"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+                        <div class="carousel-indicators" aria-hidden="true"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HackLure</h3>
+                        <p>An intrusion detection system that uses a decoy SSH environment to lure attackers, log their activity, and enhance network security monitoring.</p>
+                    </div>
+                </article>
+
+                <!-- NIDStoKnow -->
+                <article class="project-card fade-in-up delay-2" data-project="NIDStoKnow">
+                    <div class="project-carousel" aria-label="NIDStoKnow image carousel">
+                        <div class="carousel-frame">
+                            <div class="carousel-track">
+                                <img src="NIDStoKnow/LANDING PAGE.svg" alt="NIDStoKnow - LANDING PAGE screen" loading="lazy">
+                                <img src="NIDStoKnow/STUDENT SIGN UP.svg" alt="NIDStoKnow - STUDENT SIGN UP screen" loading="lazy">
+                                <img src="NIDStoKnow/STUDENT DASHBOARD.svg" alt="NIDStoKnow - STUDENT DASHBOARD screen" loading="lazy">
+                                <img src="NIDStoKnow/INSTRUCTOR DASHBOARD.svg" alt="NIDStoKnow - INSTRUCTOR DASHBOARD screen" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous NIDStoKnow image"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+                        <button class="carousel-btn next" aria-label="Next NIDStoKnow image"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+                        <div class="carousel-indicators" aria-hidden="true"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NIDStoKnow</h3>
+                        <p>An educational platform focused on Network Intrusion Detection Systems (NIDS), featuring role-based dashboards and simulation-based activities for learning.</p>
+                    </div>
+                </article>
+
+                <!-- NetMasteryHub -->
+                <article class="project-card fade-in-up delay-3" data-project="NetMasteryHub">
+                    <div class="project-carousel" aria-label="NetMasteryHub image carousel">
+                        <div class="carousel-frame">
+                            <div class="carousel-track">
+                                <img src="NetMasteryHub/LANDING PAGE.svg" alt="NetMasteryHub - LANDING PAGE screen" loading="lazy">
+                                <img src="NetMasteryHub/LOG IN.svg" alt="NetMasteryHub - LOG IN screen" loading="lazy">
+                                <img src="NetMasteryHub/DASHBOARD.svg" alt="NetMasteryHub - DASHBOARD screen" loading="lazy">
+                                <img src="NetMasteryHub/LESSON.svg" alt="NetMasteryHub - LESSON screen" loading="lazy">
+                                <img src="NetMasteryHub/ACTIVITY.svg" alt="NetMasteryHub - ACTIVITY screen" loading="lazy">
+                                <img src="NetMasteryHub/CERTIFICATE.svg" alt="NetMasteryHub - CERTIFICATE screen" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous NetMasteryHub image"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+                        <button class="carousel-btn next" aria-label="Next NetMasteryHub image"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+                        <div class="carousel-indicators" aria-hidden="true"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NetMasteryHub</h3>
+                        <p>A networking fundamentals learning hub with interactive lessons, hands-on activities, and certification upon course completion.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates reveal-section">
+        <div class="container">
+            <h2 class="section-title center"><span class="number">04</span> <span class="accent">Certificates</span></h2>
+            <div class="cert-files cert-large-grid fade-in-up" aria-live="polite">
+                <figure class="certificate-item">
+                    <img src="IT%20CERTIFICATE/cyberecurity%20for%20business.jpg" alt="Cybersecurity for Business Certificate" loading="lazy" />
+                    <figcaption>Cybersecurity for Business</figcaption>
+                </figure>
+                <figure class="certificate-item">
+                    <img src="IT%20CERTIFICATE/CYBER%20101.png" alt="Cyber 101 Certificate" loading="lazy" />
+                    <figcaption>Cyber 101</figcaption>
+                </figure>
+                <figure class="certificate-item">
+                    <img src="IT%20CERTIFICATE/CYBER%20TOOLS.png" alt="Cyber Tools Certificate" loading="lazy" />
+                    <figcaption>Cyber Tools</figcaption>
+                </figure>
+                <figure class="certificate-item">
+                    <img src="IT%20CERTIFICATE/DATA%20PRIVACY%20AWARENESS.png" alt="Data Privacy Awareness Certificate" loading="lazy" />
+                    <figcaption>Data Privacy Awareness</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact reveal-section">
+        <div class="container contact-grid">
+            <div class="contact-info fade-in-up">
+                <h2 class="section-title"><span class="number">05</span> Get In <span class="accent">Touch</span></h2>
+                <p>Feel free to reach out for collaboration, opportunities, or just to say hello.</p>
+                <ul class="contact-list">
+                    <li><i class="ri-mail-line" aria-hidden="true"></i> <a href="mailto:mendozaangelbless@gmail.com">mendozaangelbless@gmail.com</a></li>
+                </ul>
+                <div class="socials" aria-label="Social media links">
+                    <a href="https://www.facebook.com/eybeemendoza/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-line" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/qnglblss/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                    <a href="https://github.com/angeeeel-12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-line" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn (placeholder)"><i class="ri-linkedin-line" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper fade-in-up delay-1">
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn primary full">Send Message</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer reveal-section">
+        <div class="container footer-grid fade-in-up">
+            <p>&copy; <span id="year"></span> Angel Bless M. Mendoza. All rights reserved.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to home"><i class="ri-arrow-up-line"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
