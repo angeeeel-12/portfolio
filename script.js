@@ -137,15 +137,16 @@ if(contactForm){
 }
 
 // =============================
-// Project Carousels
+// Project & Certificates Carousels
 // =============================
-document.querySelectorAll('.project-carousel').forEach(carousel => {
+document.querySelectorAll('.project-carousel, .cert-carousel').forEach(carousel => {
   const track = carousel.querySelector('.carousel-track');
   const slides = Array.from(track.children);
   const prevBtn = carousel.querySelector('.carousel-btn.prev');
   const nextBtn = carousel.querySelector('.carousel-btn.next');
   const indicatorsWrap = carousel.querySelector('.carousel-indicators');
   let index = 0;
+  const isCertCarousel = carousel.classList.contains('cert-carousel');
   let autoTimer;
 
   // Build indicators
@@ -163,22 +164,22 @@ document.querySelectorAll('.project-carousel').forEach(carousel => {
     track.style.transform = `translateX(-${index * 100}%)`;
     dots.forEach(d=>d.classList.remove('active'));
     dots[index].classList.add('active');
-    restartAuto();
+    if(!isCertCarousel) restartAuto();
   }
   function next(){ goTo(index+1); }
   function prev(){ goTo(index-1); }
   nextBtn.addEventListener('click', next);
   prevBtn.addEventListener('click', prev);
 
-  function startAuto(){
-    autoTimer = setInterval(next, 5000);
-  }
-  function stopAuto(){ clearInterval(autoTimer); }
+  function startAuto(){ autoTimer = setInterval(next, 5000); }
+  function stopAuto(){ if(autoTimer) clearInterval(autoTimer); }
   function restartAuto(){ stopAuto(); startAuto(); }
 
-  carousel.addEventListener('mouseenter', stopAuto);
-  carousel.addEventListener('mouseleave', startAuto);
-  startAuto();
+  if(!isCertCarousel){
+    carousel.addEventListener('mouseenter', stopAuto);
+    carousel.addEventListener('mouseleave', startAuto);
+    startAuto();
+  }
 });
 
 // =============================
